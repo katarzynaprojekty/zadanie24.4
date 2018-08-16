@@ -4,11 +4,16 @@
   "description": "format-date",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js"
+    "test": "mocha index.test.js",
+    "testToTheFirstError": "mocha -b index.test.js",
+    "test:watch": "mocha -w index.test.js",
+    "test2:watch": "onchange \"./*.js\" -- npm test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^5.2.0"
-  }
+    "mocha": "^5.2.0",
+    "onchange": "^4.1.0"
+  },
+  "dependencies": {}
 }
